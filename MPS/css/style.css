@@ -1,9 +1,4 @@
-/*
-  Theme Name: Reveal
-  Theme URL: https://bootstrapmade.com/reveal-bootstrap-corporate-template/
-  Author: BootstrapMade.com
-  License: https://bootstrapmade.com/license/
-*/
+
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -923,6 +918,15 @@ body.mobile-nav-active #mobile-nav-toggle {
   #services .box h4, #services .box p {
     margin-left: 0;
     text-align: center;
+  }
+}
+@media(min-width: 960px){
+  #services .box {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 49%;
+    flex: 0 0 49%;
+    max-width: 49%;
+    margin-right: 10px; 
   }
 }
 
