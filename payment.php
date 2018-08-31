@@ -32,6 +32,7 @@ if (isset($_GET['payment_id']) && isset($_GET['status'])) {
 } else {
   //Handle the case where there is no parameter
 }
+//payment_id=MOJO8831005A14539186&status=success
 ?>
 
 
