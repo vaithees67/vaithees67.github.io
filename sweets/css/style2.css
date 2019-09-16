@@ -1,0 +1,584 @@
+/*--------------------------------------------------------------
+# Font
+--------------------------------------------------------------*/
+@font-face {
+  font-family: "Signika";
+  src: url("fonts/Signika/Signika-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Signika";
+  src: url("fonts/Signika/Signika-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Signika";
+  src: url("fonts/Signika/Signika-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Signika";
+  src: url("fonts/Signika/Signika-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+  background: #ffffff;
+  color: #444;
+  font-family: "Signika", sans-serif;
+  font-weight: 300;
+}
+
+a {
+  color: #990d35;
+  transition: 0.5s;
+}
+
+a:hover,
+a:active,
+a:focus {
+  color: #d52941;
+  outline: none;
+  text-decoration: none;
+}
+
+p {
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Signika", sans-serif;
+  font-weight: bold;
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+
+/* Back to top button */
+.back-to-top {
+  position: fixed;
+  display: none;
+  background: #c92d2e;
+  color: #fff;
+  padding: 6px 12px 9px 12px;
+  font-size: 16px;
+  border-radius: 2px;
+  right: 15px;
+  bottom: 15px;
+  transition: background 0.5s;
+}
+
+@media (max-width: 768px) {
+  .back-to-top {
+    bottom: 15px;
+  }
+}
+
+.back-to-top:focus {
+  background: #d46860;
+  color: #fff;
+  outline: none;
+}
+
+.back-to-top:hover {
+  background: #d46860;
+  color: #fff;
+}
+
+/*--------------------------------------------------------------
+# Top Bar
+--------------------------------------------------------------*/
+#topbar {
+  background: #990d35;
+  padding: 10px 0;
+  border-bottom: 1px solid #990d35;
+  font-size: 14px;
+}
+
+#topbar .contact-info a {
+  line-height: 1;
+  color: #eec643;
+}
+
+#topbar .contact-info a:hover {
+  color: #eda61a;
+}
+
+#topbar .contact-info span {
+  line-height: 1;
+  color: #eec643;
+}
+
+#topbar .contact-info i {
+  color: #eec643;
+  padding: 4px;
+}
+
+#topbar .contact-info .fa-phone {
+  padding-left: 20px;
+  margin-left: 20px;
+  border-left: 1px solid #e9e9e9;
+}
+
+#topbar .social-links a {
+  color: #eec643;
+  padding: 4px 12px;
+  display: inline-block;
+  line-height: 1px;
+  border-left: 1px solid #e9e9e9;
+}
+
+#topbar .social-links a:hover {
+  color: #eda61a;
+}
+
+#topbar .social-links a:first-child {
+  border-left: 0;
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+  padding: 20px 0;
+  position: relative;
+  height: 87px;
+  transition: all 0.5s;
+  z-index: 997;
+}
+
+#header:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100px;
+  background: url(../images/header-banner.png) repeat-x;
+}
+
+#header #logo {
+  position: absolute;
+  left: 40%;
+  top: 0;
+  z-index: 2;
+  width: 270px;
+  height: auto;
+  margin: 0 0 0 -20px;
+}
+
+#header #logo h1 {
+  font-size: 42px;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+#header #logo h1 a {
+  color: #0c2e8a;
+  line-height: 1;
+  display: inline-block;
+}
+
+#header #logo h1 a span {
+  color: #990d35;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  left: -3000em;
+  position: absolute;
+}
+
+#header #logo img {
+  padding: 0;
+  margin: 0;
+  width: 270px;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+
+@media (max-width: 768px) {
+  #header {
+    padding: 20px 0;
+    height: 74px;
+  }
+
+  #header #logo h1 {
+    font-size: 1.3rem;
+  }
+
+  #header #logo img {
+    max-height: 40px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+/* Nav Menu Essentials */
+.nav-menu,
+.nav-menu * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-menu ul {
+  position: absolute;
+  display: none;
+  top: 100%;
+  left: 0;
+  z-index: 99;
+}
+
+.nav-menu li {
+  position: relative;
+  white-space: nowrap;
+}
+
+.nav-menu > li {
+  float: left;
+}
+
+.nav-menu > li:first-child + li + li {
+  margin-right: 285px;
+}
+
+.nav-menu li:hover > ul,
+.nav-menu li.sfHover > ul {
+  display: block;
+}
+
+.nav-menu ul ul {
+  top: 0;
+  left: 100%;
+}
+
+.nav-menu ul li {
+  min-width: 180px;
+}
+
+/* Nav Menu Arrows */
+.sf-arrows .sf-with-ul {
+  padding-right: 22px;
+}
+
+.sf-arrows .sf-with-ul:after {
+  content: "\f107";
+  position: absolute;
+  right: 8px;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.sf-arrows ul .sf-with-ul:after {
+  content: "\f105";
+}
+
+/* Nav Meu Container */
+#nav-menu-container {
+  width: 942px;
+  margin: 0 auto;
+  padding: 0;
+  background: none;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  #nav-menu-container {
+    display: none;
+  }
+}
+
+/* Nav Meu Styling */
+.nav-menu a {
+  padding: 10px 8px;
+  text-decoration: none;
+  display: inline-block;
+  color: #555;
+  font-family: "Signika", sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  outline: none;
+}
+
+.nav-menu li:hover > a,
+.nav-menu > .menu-active > a {
+  color: #c92d2e;
+}
+
+.nav-menu > li {
+  margin-left: 10px;
+}
+
+.nav-menu ul {
+  margin: 4px 0 0 0;
+  padding: 10px;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  background: #fff;
+}
+
+.nav-menu ul li {
+  transition: 0.3s;
+}
+
+.nav-menu ul li a {
+  padding: 10px;
+  color: #333;
+  transition: 0.3s;
+  display: block;
+  font-size: 13px;
+  text-transform: none;
+}
+
+.nav-menu ul li:hover > a {
+  color: #c92d2e;
+}
+
+.nav-menu ul ul {
+  margin: 0;
+}
+
+/* Mobile Nav Toggle */
+#mobile-nav-toggle {
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 999;
+  margin: 20px 20px 0 0;
+  border: 0;
+  background: none;
+  font-size: 24px;
+  display: none;
+  transition: all 0.4s;
+  outline: none;
+  cursor: pointer;
+}
+
+#mobile-nav-toggle i {
+  color: #c92d2e;
+}
+
+@media (max-width: 768px) {
+  #mobile-nav-toggle {
+    display: inline;
+  }
+}
+
+/* Mobile Nav Styling */
+#mobile-nav {
+  position: fixed;
+  top: 0;
+  padding-top: 18px;
+  bottom: 0;
+  z-index: 998;
+  background: rgba(52, 59, 64, 0.9);
+  left: -260px;
+  width: 260px;
+  overflow-y: auto;
+  transition: 0.4s;
+}
+
+#mobile-nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+#mobile-nav ul li {
+  position: relative;
+}
+
+#mobile-nav ul li a {
+  color: #fff;
+  font-size: 16px;
+  overflow: hidden;
+  padding: 10px 22px 10px 15px;
+  position: relative;
+  text-decoration: none;
+  width: 100%;
+  display: block;
+  outline: none;
+}
+
+#mobile-nav ul li a:hover {
+  color: #fff;
+}
+
+#mobile-nav ul li li {
+  padding-left: 30px;
+}
+
+#mobile-nav ul .menu-has-children i {
+  position: absolute;
+  right: 0;
+  z-index: 99;
+  padding: 15px;
+  cursor: pointer;
+  color: #fff;
+}
+
+#mobile-nav ul .menu-has-children i.fa-chevron-up {
+  color: #c92d2e;
+}
+
+#mobile-nav ul .menu-item-active {
+  color: #c92d2e;
+}
+
+#mobile-body-overly {
+  width: 100%;
+  height: 100%;
+  z-index: 997;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background: rgba(52, 59, 64, 0.9);
+  display: none;
+}
+
+/* Mobile Nav body classes */
+body.mobile-nav-active {
+  overflow: hidden;
+}
+
+body.mobile-nav-active #mobile-nav {
+  left: 0;
+}
+
+body.mobile-nav-active #mobile-nav-toggle {
+  color: #fff;
+}
+
+/*--------------------------------------------------------------
+# Intro Section
+--------------------------------------------------------------*/
+#intro {
+  width: 100%;
+  height: 80vh;
+  position: relative;
+  background: url("../img/intro-carousel/1.jpg") no-repeat;
+  background-size: cover;
+}
+
+#intro .intro-content {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+#intro .intro-content h1 {
+  color: #ffffff;
+  margin-bottom: 30px;
+  font-size: 64px;
+  font-weight: 600;
+}
+
+#intro .intro-content h2 {
+  color: #ffffff;
+}
+
+#intro .intro-content h2 span {
+  color: #c92d2e;
+  text-decoration: underline;
+}
+
+@media (max-width: 767px) {
+  #intro .intro-content h2 {
+    font-size: 34px;
+  }
+}
+
+#intro .intro-content .btn-get-started,
+#intro .intro-content .btn-projects {
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 32px;
+  border-radius: 2px;
+  transition: 0.5s;
+  margin: 10px;
+  color: #fff;
+}
+
+#intro .intro-content .btn-get-started {
+  background: #0c2e8a;
+  border: 2px solid #0c2e8a;
+}
+
+#intro .intro-content .btn-get-started:hover {
+  background: none;
+  color: #0c2e8a;
+}
+
+#intro .intro-content .btn-projects {
+  background: #c92d2e;
+  border: 2px solid #c92d2e;
+}
+
+#intro .intro-content .btn-projects:hover {
+  background: none;
+  color: #c92d2e;
+}
+
+#intro #intro-carousel {
+  z-index: 8;
+}
+
+#intro #intro-carousel::before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 7;
+}
+
+#intro #intro-carousel .item {
+  width: 100%;
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+}
