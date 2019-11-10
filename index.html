@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>Toverto</title>
@@ -9,7 +10,8 @@
 
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700"
+    rel="stylesheet">
 
   <!-- Bootstrap CSS File -->
   <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -31,10 +33,37 @@
     Header
   ============================-->
   <header id="header">
+    <section id="topbar" class="d-none d-lg-block">
+      <div class="container clearfix">
+        <div class="contact-info float-left">
+          <i class="fa fa-envelope-o"></i>
+          <a href="mailto:contact@example.com">contact@example.com</a>
+          <i class="fa fa-phone"></i>
+          <span>+1 5589 55488 55</span>
+        </div>
+        <div class="social-links float-right">
+          <a href="#" class="twitter">
+            <i class="fa fa-twitter"></i>
+          </a>
+          <a href="#" class="facebook">
+            <i class="fa fa-facebook"></i>
+          </a>
+          <a href="#" class="instagram">
+            <i class="fa fa-instagram"></i>
+          </a>
+          <a href="#" class="google-plus">
+            <i class="fa fa-google-plus"></i>
+          </a>
+          <a href="#" class="linkedin">
+            <i class="fa fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+    </section>
     <div class="container-fluid">
 
       <div id="logo" class="pull-left">
-        <h1><a href="#intro" class="scrollto"><img src="img/logo_new.jpg"/><span>Toverto Solutions</span></a></h1>
+        <h1><a href="#intro" class="scrollto"><img src="img/magizh-new-logo.png" /></a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="#intro"><img src="img/logo.png" alt="" title="" /></a>-->
       </div>
@@ -50,7 +79,7 @@
             </ul>
           </li>
           <li><a href="#services">Services</a></li>
-          <li><a href="#team">Team</a></li>          
+          <li><a href="#team">Team</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav><!-- #nav-menu-container -->
@@ -69,12 +98,11 @@
         <div class="carousel-inner" role="listbox">
 
           <div class="carousel-item active">
-            <div class="carousel-background"><img src="img/Slider2.jpg" alt=""></div>
+            <div class="carousel-background"><img src="img/intro-carousel/1.jpg" alt=""></div>
             <div class="carousel-container">
               <div class="carousel-content">
-                <h2>Toverto Business Automation Suite</h2>
-                <p>Get started today to make your business very easier</p>
-                <a href="#featured-services" class="btn-get-started scrollto">Get Started</a>
+                <h2>Welcome to Magizh Parambariya Inippagam</h2>
+                <a href="#featured-services" class="btn-get-started scrollto">Explore</a>
               </div>
             </div>
           </div>
@@ -83,9 +111,8 @@
             <div class="carousel-background"><img src="img/intro-carousel/2.jpg" alt=""></div>
             <div class="carousel-container">
               <div class="carousel-content">
-                <h2>Making your ideas happen!</h2>
-                <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut.</p>
-                <a href="#featured-services" class="btn-get-started scrollto">Get Started</a>
+                <h2>The Best Traditional Sweet Destination Point</h2>
+                <a href="#featured-services" class="btn-get-started scrollto">Explore</a>
               </div>
             </div>
           </div>
@@ -94,20 +121,17 @@
             <div class="carousel-background"><img src="img/intro-carousel/3.jpg" alt=""></div>
             <div class="carousel-container">
               <div class="carousel-content">
-                <h2>Temporibus autem quibusdam</h2>
-                <p>Beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt omnis iste natus error sit voluptatem accusantium.</p>
+                <h2>Get Your Best Sweets & Savourites Here</h2>
                 <a href="#featured-services" class="btn-get-started scrollto">Get Started</a>
               </div>
             </div>
           </div>
 
           <div class="carousel-item">
-            <div class="carousel-background"><img src="img/intro-carousel/1.jpg" alt=""></div>
+            <div class="carousel-background"><img src="img/intro-carousel/4.jpg" alt=""></div>
             <div class="carousel-container">
               <div class="carousel-content">
-                <h2>Magnam aliquam quaerat</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <a href="#featured-services" class="btn-get-started scrollto">Get Started</a>
+
               </div>
             </div>
           </div>
@@ -140,19 +164,22 @@
           <div class="col-lg-4 box">
             <i class="ion-gear-a"></i>
             <h4 class="title"><a href="">HIGHLY CUSTOMIZABLE</a></h4>
-            <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+            <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint
+              occaecati cupiditate non provident</p>
           </div>
 
           <div class="col-lg-4 box box-bg">
             <i class="ion-help-buoy"></i>
             <h4 class="title"><a href="">FAST SUPPORT</a></h4>
-            <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+            <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+              commodo consequat tarad limino ata</p>
           </div>
 
           <div class="col-lg-4 box">
             <i class="ion-social-chrome-outline"></i>
             <h4 class="title"><a href="">BROWSER COMPATIBILITY</a></h4>
-            <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+            <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+              fugiat nulla pariatur</p>
           </div>
 
         </div>
@@ -167,7 +194,9 @@
 
         <header class="section-header">
           <h3>WHO <span>ARE</span> WE?</h3>
-          <p>We’re a team passionate about transformative enterprise solutions and intelligent design, out to reshape the way people interact with technology. Toverto enables organizations to create true intelligent workplaces by designing compelling user experiences that maximize productivity across the board.
+          <p>We’re a team passionate about transformative enterprise solutions and intelligent design, out to reshape
+            the way people interact with technology. Toverto enables organizations to create true intelligent
+            workplaces by designing compelling user experiences that maximize productivity across the board.
           </p>
         </header>
 
@@ -184,7 +213,7 @@
                 <li>Defining the market for the intelligent workplace</li>
                 <li>Conveniently streamline strategic solutions with next-generation markets</li>
                 <li>We value and expect integrity in all that we do</li>
-              </ul>               
+              </ul>
               </p>
             </div>
           </div>
@@ -215,7 +244,8 @@
               <ul>
                 <li>Ability to accelerate & quickly share the great work or products of your business.</li>
                 <li>Providing quality product solutions in the competitive global marketplace</li>
-                <li>Our growth & success is making each and every customers’ success  & take pride in their achievements..</li>
+                <li>Our growth & success is making each and every customers’ success & take pride in their
+                  achievements..</li>
               </ul>
             </div>
           </div>
@@ -232,23 +262,26 @@
       <div class="container">
         <header class="section-header wow fadeInUp">
           <h3>Products</h3>
-          <p>We are providing an End-to-End Business Automation Suite that helps you to centralizes business operations. With a mobile first focus, lets you manage your business on any device, anywhere. With Marketing, Sales, Operations and customer service, all in one single platform, we brings unparalleled efficiencies to your business.</p>
-        </header>        
-        <div class="row">                    
+          <p>We are providing an End-to-End Business Automation Suite that helps you to centralizes business
+            operations. With a mobile first focus, lets you manage your business on any device, anywhere. With
+            Marketing, Sales, Operations and customer service, all in one single platform, we brings unparalleled
+            efficiencies to your business.</p>
+        </header>
+        <div class="row">
           <div class="col-lg-6 box wow bounceInUp">
             <h4>Omni Channel E-Commerce solutions that helps business in </h4>
             <ul class="ete">
-                <li>Increase Productivity</li>
-                <li>Improve efficiency</li>
-                <li>Reduce Operating Costs</li>
-                <li>Eliminate Human Errors</li>
-                <li>Increase Revenue</li>
+              <li>Increase Productivity</li>
+              <li>Improve efficiency</li>
+              <li>Reduce Operating Costs</li>
+              <li>Eliminate Human Errors</li>
+              <li>Increase Revenue</li>
             </ul>
             <a href="" class="cta-btn">Read More</a>
           </div>
           <div class="col-lg-6 box wow bounceInUp">
-            <img class="img-responsive"src="img/imgpsh_fullsizebanner.png">
-          </div>         
+            <img class="img-responsive" src="img/imgpsh_fullsizebanner.png">
+          </div>
         </div>
 
 
@@ -272,7 +305,8 @@
           <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
             <div class="icon"><i class="ion-ios-analytics-outline"></i></div>
             <h4 class="title"><a href="">Real Time Sales Analytics</a></h4>
-            <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+            <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+              commodo consequat tarad limino ata</p>
           </div>
           <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
             <div class="icon"><i class="ion-asterisk"></i></div>
@@ -282,22 +316,27 @@
           <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
             <div class="icon"><i class="ion-ios-people-outline "></i></div>
             <h4 class="title"><a href="">Manage Your Sales Team</a></h4>
-            <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+            <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+              mollit anim id est laborum</p>
           </div>
           <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
             <div class="icon"><i class="ion-ios-paper-outline"></i></div>
             <h4 class="title"><a href="">Reporting</a></h4>
-            <p class="description">Stay updated and keep your finger on-the-pulse of your sales operations with inbuilt hierarchy based reporting software. The CRM for sales teams lets you receive and manage all information in a single dashboard.</p>
+            <p class="description">Stay updated and keep your finger on-the-pulse of your sales operations with inbuilt
+              hierarchy based reporting software. The CRM for sales teams lets you receive and manage all information
+              in a single dashboard.</p>
           </div>
           <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
             <div class="icon"><i class="ion-ios-barcode-outline"></i></div>
             <h4 class="title"><a href="">Easy API Compatibility</a></h4>
-            <p class="description">Make Kapture Sales management system into the central hub for all your sales activities through integrating diverse APIs such as cloud telephony, ERP software, WordPress etc.</p>
+            <p class="description">Make Kapture Sales management system into the central hub for all your sales
+              activities through integrating diverse APIs such as cloud telephony, ERP software, WordPress etc.</p>
           </div>
           <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
             <div class="icon"><i class="ion-ios-cloud-outline"></i></div>
             <h4 class="title"><a href="">The Knowledge Base</a></h4>
-            <p class="description">Be ready to provide all the necessary product information and specifications by managing all information within a single drive-Azure</p>
+            <p class="description">Be ready to provide all the necessary product information and specifications by
+              managing all information within a single drive-Azure</p>
           </div>
 
         </div>
@@ -312,31 +351,34 @@
       <div class="container text-center">
         <h3>Get a Demo Today</h3>
         <p>START A 14 DAY FREE TRIAL – NO PESKY CREDIT CARD REQUIRED.</p>
-        <div class="form">          
+        <div class="form">
           <form action="" method="post" role="form" class="contactForm">
             <div class="form-row">
               <div class="form-group col-md-3">
-                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4"
+                  data-msg="Please enter at least 4 chars" />
                 <div class="validation"></div>
               </div>
               <div class="form-group col-md-3">
-                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email"
+                  data-msg="Please enter a valid email" />
                 <div class="validation"></div>
               </div>
               <div class="form-group col-md-3">
-                <input type="text" class="form-control" name="cmp_name" id="cmp_name" placeholder="Company Name" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                <input type="text" class="form-control" name="cmp_name" id="cmp_name" placeholder="Company Name"
+                  data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
                 <div class="validation"></div>
               </div>
               <div class="form-group col-md-3"><button class="cta-btn" type="submit">Send Message</button></div>
-            </div>       
-            
+            </div>
+
           </form>
         </div>
       </div>
     </section><!-- #call-to-action -->
 
-    
-    <section id="facts"  class="wow fadeIn">
+
+    <section id="facts" class="wow fadeIn">
       <div class="container">
 
         <header class="section-header">
@@ -346,27 +388,27 @@
 
         <div class="row counters">
 
-  				<div class="col-lg-3 col-6 text-center">
+          <div class="col-lg-3 col-6 text-center">
             <span data-toggle="counter-up">274</span>
             <p>Clients</p>
-  				</div>
+          </div>
 
           <div class="col-lg-3 col-6 text-center">
             <span data-toggle="counter-up">421</span>
             <p>Projects</p>
-  				</div>
+          </div>
 
           <div class="col-lg-3 col-6 text-center">
             <span data-toggle="counter-up">1,364</span>
             <p>Hours Of Support</p>
-  				</div>
+          </div>
 
           <div class="col-lg-3 col-6 text-center">
             <span data-toggle="counter-up">18</span>
             <p>Hard Workers</p>
-  				</div>
+          </div>
 
-  			</div>
+        </div>
 
         <div class="facts-img">
           <img src="img/fact.png" alt="" class="img-fluid">
@@ -536,7 +578,8 @@
         </div>
 
       </div>
-    </section>--><!-- #portfolio -->
+    </section>-->
+    <!-- #portfolio -->
 
     <!--==========================
       Clients Section
@@ -580,7 +623,8 @@
             <h4>Ceo &amp; Founder</h4>
             <p>
               <img src="img/quote-sign-left.png" class="quote-sign-left" alt="">
-              Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+              Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium
+              quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
               <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
             </p>
           </div>
@@ -591,7 +635,8 @@
             <h4>Designer</h4>
             <p>
               <img src="img/quote-sign-left.png" class="quote-sign-left" alt="">
-              Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+              Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis
+              quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
               <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
             </p>
           </div>
@@ -602,7 +647,8 @@
             <h4>Store Owner</h4>
             <p>
               <img src="img/quote-sign-left.png" class="quote-sign-left" alt="">
-              Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+              Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor
+              labore quem eram duis noster aute amet eram fore quis sint minim.
               <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
             </p>
           </div>
@@ -613,7 +659,8 @@
             <h4>Freelancer</h4>
             <p>
               <img src="img/quote-sign-left.png" class="quote-sign-left" alt="">
-              Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+              Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim
+              dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
               <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
             </p>
           </div>
@@ -624,7 +671,8 @@
             <h4>Entrepreneur</h4>
             <p>
               <img src="img/quote-sign-left.png" class="quote-sign-left" alt="">
-              Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
+              Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa
+              labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
               <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
             </p>
           </div>
@@ -768,20 +816,24 @@
           <form action="" method="post" role="form" class="contactForm">
             <div class="form-row">
               <div class="form-group col-md-6">
-                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4"
+                  data-msg="Please enter at least 4 chars" />
                 <div class="validation"></div>
               </div>
               <div class="form-group col-md-6">
-                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email"
+                  data-msg="Please enter a valid email" />
                 <div class="validation"></div>
               </div>
             </div>
             <div class="form-group">
-              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4"
+                data-msg="Please enter at least 8 chars of subject" />
               <div class="validation"></div>
             </div>
             <div class="form-group">
-              <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+              <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us"
+                placeholder="Message"></textarea>
               <div class="validation"></div>
             </div>
             <div class="text-center"><button type="submit">Send Message</button></div>
@@ -803,7 +855,9 @@
 
           <div class="col-lg-3 col-md-6 footer-info">
             <h3>Toverto Soltions</h3>
-            <p>Help emerging corporate and business house in achieving limitless possibilities in the domain of software and automation solutions. We provide robust and customized solutions that help define, design and build applications that meet your business requirements.</p>
+            <p>Help emerging corporate and business house in achieving limitless possibilities in the domain of
+              software and automation solutions. We provide robust and customized solutions that help define, design
+              and build applications that meet your business requirements.</p>
           </div>
 
           <div class="col-lg-3 col-md-6 footer-links">
@@ -839,9 +893,10 @@
 
           <div class="col-lg-3 col-md-6 footer-newsletter">
             <h4>Our Newsletter</h4>
-            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna veniam enim veniam illum dolore legam minim quorum culpa amet magna export quem marada parida nodela caramase seza.</p>
+            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna veniam enim veniam illum dolore
+              legam minim quorum culpa amet magna export quem marada parida nodela caramase seza.</p>
             <form action="" method="post">
-              <input type="email" name="email"><input type="submit"  value="Subscribe">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
             </form>
           </div>
 
@@ -852,7 +907,7 @@
     <div class="container">
       <div class="copyright">
         &copy; Copyright <strong>Toverto Solutions Pvt ltd</strong>. All Rights Reserved
-      </div>        
+      </div>
     </div>
   </footer><!-- #footer -->
 
@@ -879,4 +934,5 @@
   <script src="js/main.js"></script>
 
 </body>
+
 </html>

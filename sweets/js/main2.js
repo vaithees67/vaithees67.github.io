@@ -15,14 +15,38 @@ jQuery(document).ready(function($) {
   // Stick the header at top on scroll
   $("#header").sticky({ topSpacing: 0, zIndex: "50" });
 
-  // Intro background carousel
-  $("#intro-carousel").owlCarousel({
-    autoplay: true,
-    dots: false,
-    loop: true,
-    animateOut: "fadeOut",
-    items: 1
-  });
+  // Intro carousel
+  var introCarousel = $(".carousel");
+  var introCarouselIndicators = $(".carousel-indicators");
+  introCarousel
+    .find(".carousel-inner")
+    .children(".carousel-item")
+    .each(function(index) {
+      index === 0
+        ? introCarouselIndicators.append(
+            "<li data-target='#introCarousel' data-slide-to='" +
+              index +
+              "' class='active'></li>"
+          )
+        : introCarouselIndicators.append(
+            "<li data-target='#introCarousel' data-slide-to='" +
+              index +
+              "'></li>"
+          );
+
+      $(this).css(
+        "background-image",
+        "url('" +
+          $(this)
+            .children(".carousel-background")
+            .children("img")
+            .attr("src") +
+          "')"
+      );
+      $(this)
+        .children(".carousel-background")
+        .remove();
+    });
 
   // Initiate the wowjs animation library
   new WOW().init();
